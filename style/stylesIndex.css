@@ -1,0 +1,113 @@
+html{
+    background-color: #042630;
+}
+body{
+    margin: 0%;
+    color: rgb(179, 182, 182);
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+.container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto; /* Centra horizontalmente */
+    overflow: hidden; /* Evita que el contenido desborde */
+    position: relative; /* Permite posicionar elementos hijos relativos a este contenedor */
+}
+
+.header {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 40px; /* Ajusta la altura según tu diseño */
+}
+
+.carousel-container {
+    width: 100%;
+    height: calc(100% - 40px); /* Ajusta la altura del contenedor del carrusel */
+    overflow: hidden; /* Para evitar que el contenido desborde */
+}
+
+.carousel {
+    display: flex;
+    width: 300%; /* ajusta según el número de elementos */
+    animation: carousel 60s infinite linear;
+    overflow: hidden;
+    height: 100%; /* Ajusta la altura del carrusel */
+}
+
+@keyframes carousel {
+    5% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* Pausa la animación cuando se detiene el hover */
+.carousel:hover {
+    animation-play-state: paused;
+}
+
+/* Opcional: añade estilos para las imágenes */
+.portada img {
+    width: 100%;
+    height: 100%; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Escalar la imagen para que cubra todo el contenedor */
+    border-radius: 20px;
+    position: relative;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+.conteiner{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+}
+nav{
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    border: solid aquamarine 1px;
+    text-align: center;
+}
+nav ul li{
+    display:inline;
+    padding-right: 5px;
+}
+.principal{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.sobremi{
+    display: flex;
+    flex-direction: row;
+}
+.perfil{
+    width: 20%;
+    height: 20%;
+}
+/*------------------------------------*/
+
+aside{
+    width: 25%;
+    height: auto;
+    padding-left: 2%;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+.pie{
+    width: 100%;
+    height: 30%;
+    background-color: rgba(190, 190, 190, 0.082);
+    text-align: center;
+
+}
