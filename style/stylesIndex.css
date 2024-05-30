@@ -1,5 +1,5 @@
 html{
-    background-color: #042630;
+    background-color: #000507;
 }
 body{
     margin: 0%;
@@ -66,26 +66,37 @@ body{
 /*-----------------------------------------------------------------------------------------------*/
 
 .conteiner{
-    height: 50%;
+    height: auto;
     display: flex;
     flex-direction: row;
     padding: 1%;
 }
+/*-----------------------------------------------------------------------------------------------*/
 nav{
     width: 100%;
-    height: 10%;
     margin: auto;
+    padding: 0%;
     border: solid aquamarine 1px;
     text-align: center;
 }
+nav ul{
+    padding: auto;
+}
 nav ul li{
     display:inline;
-    padding-right: 5px;
+    padding-right: 5%;
+    padding-left: 5%;
 }
-.principal{
-    width: 70%;
+/*-----------------------------------------------------------------------------------------------*/
+
+main{
     display: flex;
     flex-direction: column;
+
+}
+
+.principal{
+    width: 70%;
 }
 .sobremi{
     display: flex;
@@ -97,10 +108,21 @@ nav ul li{
 }
 /*------------------------------------*/
 
-aside{
+.lateral{
     width: 25%;
     height: auto;
-    padding-left: 2%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.lateral section article{
+    margin: auto;
+}
+
+.imgLate{
+    margin: auto;
+    width: 100%;
+    height: 200px;
 }
 /*-----------------------------------------------------------------------------------------------*/
 
