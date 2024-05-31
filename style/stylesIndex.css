@@ -125,6 +125,11 @@ main{
 .skillsFuture div{
     margin: auto;
 }
+.tableimg img{
+    width: 200px;
+    height: 200px;
+}
+
 /*------------------------------------*/
 
 .lateral{
