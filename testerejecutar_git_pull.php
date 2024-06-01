@@ -6,7 +6,7 @@ $output = [];
 $return_var = null;
 exec('git pull', $output, $return_var);
 
-// Mostrar el resultado del comando en otra pagina
+// Mostrar el resultado del comando en pestaña nueva
 //echo "<pre>";
 //echo "Estado de la version:\n";
 //echo implode("\n", $output);
