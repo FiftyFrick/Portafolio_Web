@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+html{
+    background-color: #000507;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+
+}
+body {
+    color: rgb(179, 182, 182);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+.header {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 40px; /* Ajusta la altura según tu diseño */
+}
+
+.carousel-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden; /* Para evitar que el contenido desborde */
+    margin: 0 auto; /* Centra horizontalmente */
+    overflow: hidden; /* Evita que el contenido desborde */
+    position: relative; /* Permite posicionar elementos hijos relativos a este contenedor */
+
+}
+.carousel {
+    display: flex;
+    width: 300%; /* ajusta según el número de elementos */
+    animation: carousel 60s infinite linear;
+    overflow: hidden;
+    height: 100%; /* Ajusta la altura del carrusel */
+}
+@keyframes carousel {
+    0% {
+        transform: translateX(0%);
+    }
+    20% {
+        transform: translateX(-60%);
+    }
+    40% {
+        transform: translateX(0%);
+    }
+    60% {
+        transform: translateX(-60%);
+    }
+    80% {
+        transform: translateX(0%);
+    }
+    90% {
+        transform: translateX(-60%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+/* Pausa la animación cuando se detiene el hover */
+.carousel:hover {
+    animation-play-state: paused;
+}
+/* Opcional: añade estilos para las imágenes */
+.portada img {
+    width: 100%;
+    height: 100%; /* Ajusta la altura de la imagen */
+    object-fit:contain ; /* Escalar la imagen para que cubra todo el contenedor */
+    border-radius: 20px;
+    position: relative;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+.conteiner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto; /* Ajusta margen para centrar horizontalmente sin margen superior */
+    padding: 0; /* Asegura que no haya padding */
+}
+.lateral{
+    width: 25%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+/*-----------------------------------------------------------------------------------------------*/
+aside{
+    width: 80%;
+    border: solid 2px rgba(134, 134, 134, 0.26);
+    border-radius: 10px;
+    padding: 5px;
+}
+.lateral section article{
+    margin: auto;
+}
+
+
+/* Contenedor de la imagen */
+.img-container {
+    width: 100%;
+    max-width: 800px; /* Máximo ancho de la imagen */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo de la imagen */
+.imgLate {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 400px; /* Altura máxima de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+    transition: max-height 0.3s ease; /* Transición suave */
+}
+
+/* Media Queries para ajustar el tamaño de la imagen en diferentes resoluciones */
+@media (max-width: 600px) {
+    .imgLate {
+        max-height: 200px; /* Altura máxima en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 400px) {
+    .imgLate {
+        max-height: 100px; /* Altura máxima en pantallas muy pequeñas */
+    }
+}
+/*-----------------------------------------------------------------------------------------------*/
+nav{
+    width: 100%;
+    margin-top: 10px;
+    padding: 0%;
+    border: solid aquamarine 1px;
+    text-align: center;
+}
+nav ul{
+    padding: 2%;
+    margin: 0%;
+}
+nav ul li{
+    display:inline;
+    padding: 1%;
+    margin: 1%;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+main{
+    display: flex;
+    flex-direction: column;
+
+}
+.intro{
+    margin: auto;
+}
+.contactIcon img{
+    background-color: antiquewhite;
+    width: 25px;
+    height: 25px;
+}
+.sobremipadre{
+    width: 100%;
+    margin: auto;
+}
+.sobremi{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.sobremi div{
+    width: 100%;
+    margin: auto;
+}
+.perfil{
+    margin: auto;
+    width: 80%;
+    height: 20%;
+}
+.skillsFuture{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.skillsFuture div{
+    margin: auto;
+}
+
+.porta-folio{
+    width: 100%;
+    margin: auto;
+}
+.portafolio{
+    width: 100%;
+    margin: auto;
+}
+.portafolio article{
+    width: 80%;
+    margin: auto;
+    overflow: hidden; /* Evita que el contenido desborde */
+
+}
+.tableimg{
+    width: 100%;
+    margin: auto;
+}
+.tableimg img{
+    width: 100%;
+    height: 100%;
+}
+.conococimientos{
+    display: flex;
+    flex-direction: column;
+}
+.cotacto{
+    width: 100%;
+    margin: auto;
+}
+.columContact{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Contenedor del formulario */
+.contact-form-container {
+    margin-left: 5%;
+    width: 55%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.281);
+    padding: 20px;
+    padding-top: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #cacaca;
+}
+
+/* Estilo de los grupos de formularios */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 15px;
+}
+
+/* Etiquetas */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Campos de entrada */
+.form-group input,
+.form-group textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+/* Efecto de enfoque en los campos */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botón de envío */
+.form-groupButton-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* Botón de envío */
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efecto de enfoque y hover en el botón */
+button:hover,
+button:focus {
+    background-color: #0056b3;
+    outline: none;
+}
+
+
+/*------------------------------------*/
+
+.pie{
+    width: 100%;
+    height: 30%;
+    background-color: rgba(190, 190, 190, 0.082);
+    text-align: center;
+}
