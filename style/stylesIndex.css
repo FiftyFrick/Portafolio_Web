@@ -157,6 +157,8 @@ body {
     height: auto;
     border-radius: 5px;
 }
+/*--------------------------------------------------------------*/
+
 .lateral {
     width: 80%; /* Establece el ancho del contenedor lateral al 80% de la página */
     padding: 20px; /* Añade relleno al contenedor lateral */
@@ -177,7 +179,6 @@ aside section article h3 {
 }
 
 aside section article p {
-    text-align: center;
     color: #aaaaaa; /* Establece el color del texto de los párrafos */
 }
 
@@ -209,7 +210,7 @@ aside section article p {
     padding: 8px; /* Añade espacio de relleno dentro de las celdas */
     text-align: center; /* Centra el contenido de las celdas */
 }
-
+/*--------------------------------------------------------------*/
 .pie footer {
     background-color: #1f1f1f;
     padding: 1rem;
