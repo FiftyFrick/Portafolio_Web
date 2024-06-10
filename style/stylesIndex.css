@@ -157,13 +157,57 @@ body {
     height: auto;
     border-radius: 5px;
 }
+.lateral {
+    width: 80%; /* Establece el ancho del contenedor lateral al 80% de la página */
+    padding: 20px; /* Añade relleno al contenedor lateral */
+    box-sizing: border-box; /* Hace que el relleno se incluya en el ancho total */
+    border-radius: 10px; /* Agrega bordes redondeados al contenedor lateral */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    min-height: 100vh; /* Hace que el contenedor ocupe al menos el 100% de la altura del viewport */
+}
+
+/* Estilos para los elementos dentro de los artículos */
+aside section article {
+    margin-bottom: 20px; /* Añade espacio entre cada artículo */
+}
 
 aside section article h3 {
-    color: #ffffff;
+    color: #ffffff; /* Establece el color del texto de los títulos */
 }
 
 aside section article p {
-    color: #aaaaaa;
+    text-align: center;
+    color: #aaaaaa; /* Establece el color del texto de los párrafos */
+}
+
+.img-container {
+    max-width: 100%; /* Limita el ancho máximo de la imagen al tamaño del contenedor */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde del contenedor */
+}
+
+.img-container img {
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+
+    width: 50%; /* Hace que la imagen ocupe todo el ancho disponible dentro del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+/*--------------------------------------------------------------*/
+.columContact {
+    width: 80%; /* Establece el ancho de la tabla al 80% de su contenedor */
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+}
+
+.columContact table {
+    width: 100%; /* Establece que la tabla ocupe el 100% del ancho disponible */
+    border-collapse: collapse; /* Combina los bordes de las celdas */
+}
+
+.columContact table td {
+    border: 1px solid #ddd; /* Establece un borde para las celdas de la tabla */
+    padding: 8px; /* Añade espacio de relleno dentro de las celdas */
+    text-align: center; /* Centra el contenido de las celdas */
 }
 
 .pie footer {
